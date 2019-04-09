@@ -10,11 +10,12 @@ import com.datastructure.linkedlist.NewLinkedList;
  * @CreateDate: 2019/4/9/009 11:08
  */
 public class Main {
-    public static void main(String[] args) {
-        NewLinkedList newLinkedList=new NewLinkedList();
+    public static void main(String[] args) throws Exception {
+        NewLinkedList<String> newLinkedList=new NewLinkedList();
         newLinkedList.add("1");
         newLinkedList.add("2");
         newLinkedList.add("3");
-
+        newLinkedList.remove(2);
+        System.out.println(newLinkedList.get(1));
     }
 }
